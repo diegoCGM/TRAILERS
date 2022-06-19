@@ -1,0 +1,444 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.nav {
+    grid-area: header;
+    background-color: rgb(245, 245, 245);
+    width: 100%;
+    height: 100px;
+  }
+  .main{
+    grid-area: main;
+    display: grid;
+    grid-template-columns: repeat(4,minmax(200px,1fr));
+    grid-template-rows: repeat(2,minmax(100px,1fr));
+    gap: 20px;
+    padding: 20px;
+  flex-wrap: wrap;
+ 
+    
+  }
+   .articulo{
+     width: 100%;
+     height: auto;
+    
+     
+   }
+   form{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+  
+  }
+  form label{
+    font-size: 40px ;
+    color: rgb(7, 7, 7);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  
+  }
+  form input{
+    height: 30px;
+    font-size: 40px;
+    border: 2px solid black;
+  }
+    .section {
+      grid-area: sidebar;
+      background-color: rgb(255, 255, 255);
+      height: auto;
+    }
+    .footer {
+      grid-area: footer;
+      background: #a08d8d;
+      height: 80px;
+    }
+    .footer p{
+     font-size: 35px;
+      text-align: center;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      margin-top: 25px;
+      color: #fff;
+    }
+    .con-buscador button{
+      padding: 7px ;
+      border: none;
+      border-radius: 5px ;
+      background-color: rgb(76, 96, 114);
+      color: #fff;
+     cursor: pointer;
+  
+    }
+    button{
+      padding: 7px ;
+      border: none;
+      border-radius: 5px ;
+      background-color: rgb(19, 124, 216);
+      color: #fff;
+      font-size: 20px;
+     cursor: pointer;
+    }
+    button:hover{
+      background-color: rgb(112, 202, 38);
+    }
+    .con-buscador #input{
+  border-radius: 7px;
+  
+  font-size: 20px;
+  height: 40px;
+    }
+  
+    .con-buscador button{
+      font-size: 20px;
+    }
+    .con-buscador button:hover{
+      background-color: rgb(74, 74, 175);
+      color: #fff;
+      
+    }
+  
+    .con-buscador{
+      margin-top: 20px;
+      gap: 10px;
+      display: flex;
+
+    }
+    .menu{
+      grid-area: menu;
+     
+      height: 50px;
+      
+      
+    }
+    
+    .container {
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(5,auto);
+      grid-template-rows: repeat(5,auto);
+      grid-template-areas: 
+        "header header header header"
+        "menu menu menu menu"
+        "banner banner banner banner"
+        "main main main sidebar"
+        "footer footer footer footer";
+    }
+  
+    .cont-nav{
+      height: 100%;
+      display: flex;
+     gap: 20px;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+  
+    .cont-nav img{
+      width: 120px;
+     
+      margin: 10px;
+      border-radius: 2px;
+    }
+
+    .con-items ul li ul{
+    
+      display: none;
+       
+        background-color: #262626;
+        position: absolute;
+        margin-top: px;
+        height: auto;
+      
+    }
+    .con-items ul li ul li{
+      padding: 10px;
+    }
+    .con-items ul li:hover ul{
+        display: block;
+        
+    }
+    
+    .con-items ul li ul li a:hover{
+    
+    background-color: #222020;
+    }
+  
+    .con-items ul{
+      display:flex;
+    
+      justify-content:space-evenly;
+      gap: 20px;
+      /* background: rgb(226, 78, 78); */
+      background-color: #0b0c0c;
+      height: 100%;
+      align-items: center;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    .con-items ul li{
+      list-style: none;
+    }
+    .con-items ul li a{
+      color: rgb(255, 255, 255);
+      font-size: 16px;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      letter-spacing: 2px;
+      text-decoration: none;
+    }
+    .con-items ul li a:hover{
+     
+      color: rgb(216, 250, 136);
+      transition: 0.3s;
+    }
+    .con-items{
+      background-color: orange;
+      height: 100%;
+    }
+  
+    .con-articulo{
+      width: 100%;
+      height: 100%;
+     
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+  
+  
+    .imagen{
+      min-width: 270px;
+      width: 270px;
+    height: 250px;
+    
+    }
+    .texto{
+  
+      width: 270px;
+     height: auto;
+      background-color: rgb(252, 255, 251);
+      font-size: 18px;
+     border-top-right-radius: 2px;
+  
+  border-bottom-right-radius:25px ;
+  
+    }
+    .texto p{
+      padding: 10px;
+  
+    }
+    .articulo1{
+     background-image: url(p1.jpg);
+     background-size: 100% 100%;
+  
+    }
+    .articulo2{
+      background-image: url(p2.jpg);
+      background-size: 100% 100%;
+   
+     }
+     .articulo3{
+      background-image: url(p3.jpg);
+      background-size: 100% 100%;
+   
+     }
+     .articulo4{
+      background-image: url(p5.jpg);
+      background-size: 100% 100%;
+   
+     }
+
+     .articulo5{
+      background-image: url(p6.jpg);
+      background-size: 100% 100%;
+   
+     }
+     .articulo6{
+      background-image: url(p7.jpg);
+      background-size: 100% 100%;
+   
+     }
+     .articulo7{
+      background-image: url(p8.jpg);
+      background-size: 100% 100%;
+   
+     }
+
+
+ .con-interes{
+   width: 90%;
+
+   height: auto;
+  
+  margin: auto;
+  
+
+ }
+.con-interes img{
+  width: 100%;
+  border-radius: 10px;
+
+
+}
+.con-interes p{
+
+  padding: 15px;
+  font-size: 20px;
+  background-color: #e67e22;
+  border-radius: 20px;
+  color: aliceblue;
+  padding-bottom: 15px;
+
+
+}
+
+
+   @media only screen and (max-width: 1540px) {
+    .main{
+         
+      grid-template-columns: repeat(3,minmax(200px,1fr));
+      grid-template-rows: repeat(3,minmax(100px,1fr));
+  
+       }
+   }
+   @media only screen and (max-width: 1350px) {
+     .main{
+         
+    grid-template-columns: repeat(2,minmax(200px,1fr));
+    grid-template-rows: repeat(4,minmax(100px,1fr));
+
+     }
+ 
+     .articulo{
+      width: 100%;
+      height: auto;
+      
+      
+    }
+
+    }
+
+
+    @media only screen and (max-width: 900px) {
+      .main{
+         
+        grid-template-columns: repeat(1,minmax(200px,1fr));
+        grid-template-rows: repeat(4,minmax(100px,1fr));
+    
+         }
+
+    }
+  
+
+  @media only screen and (max-width: 600px) {
+   .con-interes{
+     display: none;
+   }
+   .con-items ul li ul{
+    display: none;
+   }
+   .con-items ul li:hover ul{
+    display: none;
+    
+}
+    .nav h1{
+      font-size: 25px;
+    }
+    .menu{
+      height: 250px;
+     
+    }
+
+    .con-items ul{
+      height: 100%;
+    width: 100%;
+     flex-direction: column;
+     
+      
+    }
+    .con-items ul li{
+      text-align: center;
+      padding-top: 2px;
+     
+    
+
+    }
+
+    .main{
+   
+      grid-template-columns: repeat(1,minmax(250px,500px));
+      grid-template-rows: repeat(7,minmax(100px,1fr));
+     
+   
+      
+    }
+
+    .con-articulo .imagen{
+      min-width: 200px;
+      width: 350px;
+    height: 350px;
+    border-radius: 20px;
+    
+    }
+    .con-articulo .texto{
+      width: 250px;
+      height: 150px;
+  
+    width: 350px;
+    font-size: 18px;
+    background-color: rgb(254, 255, 255);
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+
+    }
+
+.con-items{
+  height: 100%;
+}
+    .con-items ul li a{
+    
+     font-size: 15px;
+    }
+
+    .container {
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(4,auto);
+      grid-template-rows: repeat(5,auto);
+      grid-template-areas: 
+        "header header header header"
+        "menu menu menu menu"
+        "banner banner banner banner"
+        "sidebar sidebar sidebar sidebar"
+        "main main main main"
+       
+        "footer footer footer footer";
+    }
+
+  
+
+       .section{
+         padding: 5px;
+         margin-top: 10px;
+       }
+
+     
+     
+
+  }
+
+
+.banner{
+  width: 100%;
+  height: 500px;
+  background-color: red;
+  grid-area: banner;
+}
+.banner img{
+  width: 100%;
+  height: 100%;
+}
